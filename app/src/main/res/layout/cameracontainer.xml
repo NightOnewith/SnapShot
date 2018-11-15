@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:camera="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.cyzn.yzj.snapshot.util.camera.CameraSurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" />
+
+    <com.cyzn.yzj.snapshot.util.camera.FocusImageView
+        android:id="@+id/focusImageView"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        camera:focus_focusing_id="@drawable/focus_focusing"
+        camera:focus_success_id="@drawable/focus_focused"
+        camera:focus_fail_id="@drawable/focus_focus_failed"/>
+
+    <com.cyzn.yzj.snapshot.util.camera.FaceView
+        android:id="@+id/face_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>
